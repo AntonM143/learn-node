@@ -1,10 +1,4 @@
-GET http://localhost:3000
+DELETE http://localhost:3000/users/7d203201-6778-404a-9191-49eff363d632
 
-##
 
-POST http://localhost:3000/api/confirmOrder
-Content-Type: application/json
-{
-    productName: "Iphone",
-    price: 4000
-}
+

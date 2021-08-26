@@ -1,24 +1,22 @@
-const express = require('express')
-const fs = require('fs');
+import express from 'express';
+import fs from 'fs';
 const server = express()
-const port = 3000
+const port = process.env.PORT || 3000
+
+import usersRoutes from "./routes/users.js";
 
 
 server.use(express.json())
 
+server.use('/users', usersRoutes)
 server.get('/api', function (req, res) {
-    let raw = fs.readFileSync("cars.json")
-    let cars = JSON.parse(raw)
-    res.json(JSON.stringify(cars))
+  let raw = fs.readFileSync("users.json")
+  let users = JSON.parse(raw)
+  res.json(JSON.stringify(users))
     
 })
-server.post('/api', (req, res) => {
-    let raw = fs.readFileSync("cars.json")
-    let cars = JSON.parse(raw)
-    cars.push(req.body)
-    fs.writeFileSync("cars.json", JSON.stringify(cars))
-    res.json("sparat")
-})
+
+
 
 /* typ av import läser in allt i public mappen */
 server.use(express.static('public'))
