@@ -1,4 +1,8 @@
-DELETE http://localhost:3000/users/7d203201-6778-404a-9191-49eff363d632
+GET https://rest-sandbox.coinapi.io/
+content-type: application/json
+X-CoinAPI-Key: "F2842B56-FF15-4A96-9A26-BC68B668BFC2"
+
+
 
 
 

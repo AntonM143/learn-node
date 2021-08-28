@@ -12,7 +12,7 @@ server.use('/users', usersRoutes)
 server.get('/api', function (req, res) {
   let raw = fs.readFileSync("users.json")
   let users = JSON.parse(raw)
-  res.json(JSON.stringify(users))
+  res.json(users)
     
 })
 

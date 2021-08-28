@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="logic.js"></script>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <h1>WEOWEOWEOWOEWOE</h1>
+    <h1 id="h1">Tip</h1>
+    <table id="theTable"></table>
+    
     <!-- <button onCLick=saveNew()>saveNew</button> -->
-    <table>
+    <div>
       <button onCLick="collectSaved()">Visa användare</button>
-      <table>
+      <div>
         <input type="text" id="inputFirstName" placeholder="Firstname..." />
         <input type="text" id="inputLastName" placeholder="Lastname..." />
         <input type="text" id="inputId" placeholder="Id..." />
-      </table>
-      <table>
+      </div>
+      <div>
         <button onCLick="saveInput()">Lägg till ny</button>
         <button onCLick="changeUser()">Ändra uppgifter</button>
         <button onCLick="deleteUser()">Ta bort användare</button>
-      </table>
-    </table>
+        <button onCLick="funInfo()">Fun Info</button>
+      </div>
+    </div>
   </body>
 </html>
