@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <h1 id="h1">Tip</h1>
+    <h1 id="h1">Tips</h1>
     <table id="theTable"></table>
     
-    <!-- <button onCLick=saveNew()>saveNew</button> -->
+    
     <div>
       <button onCLick="collectSaved()">Visa användare</button>
+      <button onCLick="funInfo()">Roligt tips</button>
       <div>
         <input type="text" id="inputFirstName" placeholder="Firstname..." />
         <input type="text" id="inputLastName" placeholder="Lastname..." />
         <input type="text" id="inputId" placeholder="Id..." />
       </div>
       <div>
-        <button onCLick="saveInput()">Lägg till ny</button>
+        <button onCLick="saveUser()">Lägg till ny</button>
+        <button onCLick="getSpecific()">Hämta specifik användare</button>
         <button onCLick="changeUser()">Ändra uppgifter</button>
         <button onCLick="deleteUser()">Ta bort användare</button>
-        <button onCLick="funInfo()">Fun Info</button>
       </div>
     </div>
   </body>

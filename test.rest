@@ -1,6 +1,32 @@
-GET https://rest-sandbox.coinapi.io/
+GET http://localhost:3000/api
 content-type: application/json
-X-CoinAPI-Key: "F2842B56-FF15-4A96-9A26-BC68B668BFC2"
+
+### 
+
+GET http://localhost:3000/users/fbcb5613-3d98-4812-958f-9234cdcd9014
+content-type: application/json
+
+### 
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "firstName": "olle",
+    "lastName": "Månsson"
+}
+
+###
+
+DELETE http://localhost:3000/users/f23a08a3-856d-4737-9eae-6900b116126c
+ 
+###
+
+PUT http://localhost:3000/users/fbcb5613-3d98-4812-958f-9234cdcd9014
+Content-Type: application/json
+
+{
+    "firstName": "polle"
+}
 
 
 
