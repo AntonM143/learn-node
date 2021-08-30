@@ -1,5 +1,3 @@
-/* TODO Hämta en specifik användare */
-/* samt fixa .rest filen body ska med i put/post/delete?*/
 async function getSpecific() {
   const inputId = document.getElementById("inputId").value;
   const response = await makeRequest(`http://localhost:3000/users/${inputId}`, "GET");
